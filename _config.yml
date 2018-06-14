@@ -19,17 +19,17 @@ override: false
 # ---------------------------------------------------------------
 
 # To get or check favicons visit: https://realfavicongenerator.net
-# Put your favicons into `hexo-site/source/` (recommend) or `hexo-site/themes/next/source/images/` directory.
+# Put your favicons into `hexo-site/source/` (recommend) or `hexo-site/themes/next_bk/source/images/` directory.
 
-# Default NexT favicons placed in `hexo-site/themes/next/source/images/` directory.
+# Default NexT favicons placed in `hexo-site/themes/next_bk/source/images/` directory.
 # And if you want to place your icons in `hexo-site/source/` root directory, you must remove `/images` prefix from pathes.
 
 # For example, you put your favicons into `hexo-site/source/images` directory.
 # Then need to rename & redefine they on any other names, otherwise icons from Next will rewrite your custom icons in Hexo.
 favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
-  apple_touch_icon: /images/apple-touch-icon-next.png
+  small: /images/favicon-16x16-next_bk.png
+  medium: /images/favicon-32x32-next_bk.png
+  apple_touch_icon: /images/apple-touch-icon-next_bk.png
   safari_pinned_tab: /images/logo.svg
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
@@ -75,7 +75,7 @@ footer:
 canonical: true
 
 # Change headers hierarchy on site-subtitle (will be main site description) and on all post/pages titles for better SEO-optimization.
-seo: false
+seo: true
 
 # If true, will add site-subtitle to index page, added in main hexo config.
 # subtitle: Subtitle
@@ -93,28 +93,40 @@ index_with_subtitle: false
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
 menu:
   home: / || home
-  #about: /about/ || user
-  #tags: /tags/ || tags
-  #categories: /categories/ || th
   archives: /archives/ || archive
-  #schedule: /schedule/ || calendar
+  #about: /about/ || user
+  tags: /tags/ || tags
+  categories: /categories/ || th
+#  switch_lang_zh-Hans: / || globe
+#  switch_lang_en: /en/ || globe
+#  switch_lang_ja: /ja/ || globe
+#  schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
-  #commonweal: /404/ || heartbeat
+#  commonweal: /404/ || heartbeat
 
 # Enable/Disable menu icons.
 menu_icons:
   enable: true
-
+# Icon Mapping.
+  home: home
+  about: user
+  categories: th
+  tags: tags
+  archives: archive
+  commonweal: heartbeat
+  switch_lang_cn: globe
+  switch_lang_en: globe
+  switch_lang_ja: globe
 
 # ---------------------------------------------------------------
 # Scheme Settings
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+#scheme: Muse
 #scheme: Mist
 #scheme: Pisces
-#scheme: Gemini
+scheme: Gemini
 
 
 # ---------------------------------------------------------------
@@ -126,8 +138,8 @@ scheme: Muse
 # Key is the link label showing to end users.
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
-#social:
-  #GitHub: https://github.com/yourname || github
+social:
+  GitHub: https://github.com/liaocyintl || github
   #E-Mail: mailto:yourname@gmail.com || envelope
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
@@ -148,13 +160,16 @@ links_icon: link
 links_title: Links
 links_layout: block
 #links_layout: inline
-#links:
-  #Title: http://example.com/
+links:
+#  赞穆海淘: https://shop.xam.co.jp/
+#  Asahi文化学院: http://asahica.com/
+#  NPO法人东海技术交流中心: http://npotokai.com/
+  Hexo Next Theme: http://theme-next_bk.iissnan.com/
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
 # in site  directory(source/uploads): /uploads/avatar.gif
-#avatar: /images/avatar.gif
+avatar: /uploads/avatar.png
 
 # Table Of Contents in the Sidebar
 toc:
@@ -163,7 +178,7 @@ toc:
   # Automatically add list number to toc.
   number: true
 
-  # If true, all words will placed on next lines if header width longer then sidebar width.
+  # If true, all words will placed on next_bk lines if header width longer then sidebar width.
   wrap: false
 
 # Creative Commons 4.0 International License.
@@ -216,8 +231,8 @@ excerpt_description: true
 # Automatically Excerpt. Not recommend.
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: false
-  length: 150
+  enable: true
+  length: 500
 
 # Post meta display settings
 post_meta:
@@ -277,7 +292,7 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night
 
 
 # ---------------------------------------------------------------
@@ -342,7 +357,7 @@ font:
 
 # MathJax Support
 mathjax:
-  enable: false
+  enable: true
   per_page: false
   cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
 
@@ -353,15 +368,15 @@ han: false
 #swiftype_key:
 
 # Baidu Analytics ID
-#baidu_analytics:
+baidu_analytics: 0974e06186820775f8d51e33bc87d4dd
 
 # Duoshuo ShortName
 #duoshuo_shortname:
 
 # Disqus
 disqus:
-  enable: false
-  shortname:
+  enable: true
+  shortname: liaocy-net
   count: true
 
 # Hypercomments
@@ -406,8 +421,8 @@ gitment:
   count: true # Show comments count in post meta area
   lazy: false # Comments lazy loading with a button
   cleanly: false # Hide 'Powered by ...' on footer, and more
-  language: # Force language, or auto switch by theme
-  github_user: # MUST HAVE, Your Github ID
+  language: zh-Hans # Force language, or auto switch by theme
+  github_user:  # MUST HAVE, Your Github ID
   github_repo: # MUST HAVE, The repo you use to store Gitment comments
   client_id: # MUST HAVE, Github client id for the Gitment
   client_secret: # EITHER this or proxy_gateway, Github access secret token for the Gitment
@@ -444,7 +459,7 @@ gitment:
 #           Technorati,Posterous,Tumblr,GoogleBookmarks,Newsvine,
 #           Evernote,Friendfeed,Vkontakte,Odnoklassniki,Mailru
 needmoreshare2:
-  enable: false
+  enable: true
   postbottom:
     enable: false
     options:
@@ -604,7 +619,7 @@ algolia_search:
 # Local search
 # Dependencies: https://github.com/flashlab/hexo-generator-search
 local_search:
-  enable: false
+  enable: true
   # if auto, trigger search by changing input
   # if manual, trigger search by pressing enter key or search button
   trigger: auto
@@ -654,7 +669,7 @@ tabs:
 
 # Use velocity to animate everything.
 motion:
-  enable: true
+  enable: false
   async: false
   transition:
     # Transition variants:

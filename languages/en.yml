@@ -16,6 +16,9 @@ menu:
   schedule: Schedule
   sitemap: Sitemap
   commonweal: Commonweal 404
+#  switch_lang_zh-Hans: 中文
+#  switch_lang_en: English
+#  switch_lang_ja: 日本語
 
 sidebar:
   overview: Overview

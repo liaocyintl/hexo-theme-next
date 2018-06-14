@@ -116,7 +116,7 @@
 
                             self.loaded = true;
 
-                            /* Remove image from array so it is not looped next time. */
+                            /* Remove image from array so it is not looped next_bk time. */
                             var temp = $.grep(elements, function(element) {
                                 return !element.loaded;
                             });

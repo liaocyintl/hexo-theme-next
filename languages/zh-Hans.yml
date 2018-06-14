@@ -16,6 +16,9 @@ menu:
   schedule: 日程表
   sitemap: 站点地图
   commonweal: 公益404
+  switch_lang_zh-Hans: 中文
+  switch_lang_en: English
+  switch_lang_ja: 日本語
 
 sidebar:
   overview: 站点概览
