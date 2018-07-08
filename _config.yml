@@ -491,7 +491,7 @@ needmoreshare2:
 #yandex_site_verification:
 
 # CNZZ count
-cnzz_siteid: 1259798438
+# cnzz_siteid: 1259798438
 
 # Application Insights
 # See https://azure.microsoft.com/en-us/services/application-insights/
@@ -587,7 +587,7 @@ busuanzi_count:
 
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
-baidu_push: false
+baidu_push: true
 
 # Google Calendar
 # Share your recent schedule to others via calendar page
@@ -827,5 +827,5 @@ images: images
 # Theme version
 version: 5.1.4
 
-baidu_site_verification: Nm1WLzZHKE
+baidu_site_verification: SEtBtbN7LP
 google_site_verification: KWEKu7-400JMONtPKXdBIPQ4ICpSLiomHWycMvJiiUw
