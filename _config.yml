@@ -63,7 +63,7 @@ footer:
     version: true
   # -------------------------------------------------------------
   # Any custom text can be defined here.
-  custom_text: '<p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></p>'
+  custom_text: '<p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a> and <a href="https://github.com/" style="font-weight: bold">Github</a></p>'
 
 # ---------------------------------------------------------------
 # SEO Settings
@@ -827,5 +827,5 @@ images: images
 # Theme version
 version: 5.1.4
 
-baidu_site_verification: nKRpGVkbTZ
+baidu_site_verification: wR0oqfu7r3
 google_site_verification: KWEKu7-400JMONtPKXdBIPQ4ICpSLiomHWycMvJiiUw
